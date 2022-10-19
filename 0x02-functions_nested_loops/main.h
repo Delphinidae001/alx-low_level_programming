@@ -12,7 +12,7 @@ void jack_bauer(void);
 void times_table(voic);
 int add(int, int);
 void print_to_98(int n);
-int _putchar(char c)
+int _putchar(char c);
 
 
 #endif
