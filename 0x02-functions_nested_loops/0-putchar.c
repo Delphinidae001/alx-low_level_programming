@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
- * main - print_putchar
- * is written by delphinidae
- * Return: 0
+ * main - print _putchar and a new line
+ *
+ * Return: Always 0
  */
 
 int main(void)
@@ -16,5 +17,6 @@ _putchar('h');
 _putchar('a');
 _putchar('r');
 _putchar('\n');
-return (0);
 
+return (0);
+}
