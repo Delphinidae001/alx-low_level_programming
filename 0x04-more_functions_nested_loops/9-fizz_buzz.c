@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - print frizzbuzz
+ * main - print fizzbuzz
  * Return: Always 0
  */
 
