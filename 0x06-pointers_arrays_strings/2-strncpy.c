@@ -1,30 +1,28 @@
-#inlcude "main.h"
+#include "main.h"
 
 /**
- * _strncpy -  function that copies a string
- * @dest: destination string
- * @src: source string
- * @n: number of n bytes
- * Return: pointer to resulting string
+ * leet - encodes a string into 1337
+ * @s: string to be encoded
+ * Return: the resulting string
  */
 
-char *_strncpy(char *dest, char *src, int n)
+char *leet(char *s)
 {
-	int i;
+	int i, j;
 
-	i = 0;
+	char *a = "aAeEoOtTlL";
+	char *b = "4433007711";
 
-	while (i < n && src[i] != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		dest[i] = src[i];
-		i++;
+		for (j = 0; j < 10; j++)
+		{
+			if (s[i] == a[j])
+			{
+				s[i] = b[j];
+			}
+		}
 	}
 
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-
-	return (dest);
+	return (s);
 }
